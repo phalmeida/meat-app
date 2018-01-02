@@ -1,4 +1,4 @@
-# Meat - Angular App Starter
+# Meat - Angular App Starter - Philipe
 
 ## 1. Passos para começar
 
