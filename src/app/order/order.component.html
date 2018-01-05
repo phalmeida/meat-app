@@ -36,16 +36,7 @@
           </div>
         </div>
         <div class="col-sm-2 col-xs-6">
-          <div class="form-group"
-               [class.has-success]="iptNumber.valid && (iptNumber.dirty || iptNumber.touched)"
-               [class.has-error]="!iptNumber.valid && (iptNumber.dirty || iptNumber.touched)"
-          >
-            <label class="control-label sr-only" for="number"><i class="fa fa-check"></i> Número</label>
-            <input type="text" class="form-control" id="number" name="number" #iptNumber="ngModel" ngModel placeholder="Número" required autocomplete="off">
-            <span class="help-block" *ngIf="iptNumber.valid && (iptNumber.dirty || iptNumber.touched)">
-              <i class="fa fa-check"></i> Ok
-            </span>
-          </div>
+            <mt-input></mt-input>
         </div>
         <div class="col-sm-4 col-xs-6">
           <div class="form-group">
