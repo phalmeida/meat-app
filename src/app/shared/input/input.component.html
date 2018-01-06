@@ -1,10 +1,15 @@
 <div class="form-group"
-     [class.has-success]="iptNumber.valid && (iptNumber.dirty || iptNumber.touched)"
-     [class.has-error]="!iptNumber.valid && (iptNumber.dirty || iptNumber.touched)"
+     [class.has-success]="hasSuccess()"
+     [class.has-error]="hasError()"
 >
-  <label class="control-label sr-only" for="number"><i class="fa fa-check"></i> Número</label>
-  <input type="text" class="form-control" id="number" name="number" #iptNumber="ngModel" ngModel placeholder="Número" required autocomplete="off">
-  <span class="help-block" *ngIf="iptNumber.valid && (iptNumber.dirty || iptNumber.touched)">
+    <label class="control-label sr-only"><i class="fa fa-check"></i> {{label}}</label>
+
+    <ng-content></ng-content>
+
+    <span class="help-block" *ngIf="hasSuccess()">
               <i class="fa fa-check"></i> Ok
+            </span>
+    <span class="help-block" *ngIf="hasError()">
+              <i class="fa fa-check"></i> {{errorMessage}}
             </span>
 </div>
