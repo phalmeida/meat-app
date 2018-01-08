@@ -12,16 +12,16 @@ import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
 import {RestaurantsComponent} from './restaurants/restaurants.component';
 import {RestaurantComponent} from './restaurants/restaurant/restaurant.component'
-import {RestaurantsService} from "./restaurants/restaurants.service";
+import {RestaurantsService} from './restaurants/restaurants.service';
 import {RestaurantDetailComponent} from './restaurants/restaurant-detail/restaurant-detail.component';
 import {MenuComponent} from './restaurants/restaurant-detail/menu/menu.component';
 import {ShoppingCartComponent} from './restaurants/restaurant-detail/shopping-cart/shopping-cart.component';
 import {MenuItemComponent} from './restaurants/restaurant-detail/menu-item/menu-item.component';
 import {ReviewsComponent} from './restaurants/restaurant-detail/reviews/reviews.component';
-import {ShoppingCartService} from "./restaurants/restaurant-detail/shopping-cart/shopping-cart.service";
+import {ShoppingCartService} from './restaurants/restaurant-detail/shopping-cart/shopping-cart.service';
 import {OrderComponent} from './order/order.component';
 import {InputComponent} from './shared/input/input.component';
-import {RadioComponent} from './shared/src/app/shared/radio/radio.component';
+import {RadioComponent} from './shared/radio/radio.component';
 
 
 @NgModule({
